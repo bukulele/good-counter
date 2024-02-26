@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-bottom: 5px;
 }
 
 .goodActionTextInputContainer {
-  width: 500px;
+  width: 100%;
   background-color: #cfffff;
   height: 60px;
   border-radius: 60px;
@@ -13,6 +14,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  position: relative;
 }
 
 .goodActionTextInput {
@@ -26,4 +28,13 @@
 .goodActionTextInput:focus {
   border: none;
   outline: none;
+}
+
+.charLeft {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  color: green;
 }

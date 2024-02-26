@@ -1,0 +1,13 @@
+.goodActionsListContainer {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.goodActionsList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
