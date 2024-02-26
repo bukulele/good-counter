@@ -7,3 +7,9 @@
   min-height: 100vh;
   background-color: #fffcf5;
 }
+
+.goodActionInput {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

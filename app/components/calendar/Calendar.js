@@ -76,7 +76,7 @@ function Calendar() {
         <Button
           content={"Today"}
           style={"todayCalendarButton"}
-          func={plusYear}
+          func={() => setTodayDate(new Date())}
         />
         <div className={styles.calendarControls}>
           <Button

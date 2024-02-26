@@ -6,18 +6,20 @@
   padding: 10px;
   border-radius: 10px;
   background-color: #cfffff;
+  height: 370px;
 }
 
 .calendarHeader {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 100%;
 }
 
 .calendarControls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, min-content) auto repeat(2, min-content);
   gap: 5px;
   width: 100%;
 }

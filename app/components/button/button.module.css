@@ -25,3 +25,15 @@
   background-color: #e63a3a;
   color: #fff;
 }
+
+.addGoodActionButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #3ae643;
+}
+
+.addGoodActionButton:hover {
+  background-color: #e6e63a;
+}
