@@ -72,29 +72,35 @@ function Calendar() {
 
   return (
     <div className={styles.calendarContainer}>
-      <div className={styles.calendarControls}>
+      <div className={styles.calendarHeader}>
         <Button
-          content={<FontAwesomeIcon icon={faAnglesLeft} />}
-          style={"calendarControlArrow"}
-          func={minusYear}
-        />
-        <Button
-          content={<FontAwesomeIcon icon={faAngleLeft} />}
-          style={"calendarControlArrow"}
-          func={minusMonth}
-        />
-        {months[todayDate.getMonth()]} {todayDate.getFullYear()}
-        <Button
-          content={<FontAwesomeIcon icon={faAngleRight} />}
-          style={"calendarControlArrow"}
-          func={plusMonth}
-        />
-        <Button
-          content={<FontAwesomeIcon icon={faAnglesRight} />}
-          style={"calendarControlArrow"}
+          content={"Today"}
+          style={"todayCalendarButton"}
           func={plusYear}
         />
-        <div>Today</div>
+        <div className={styles.calendarControls}>
+          <Button
+            content={<FontAwesomeIcon icon={faAnglesLeft} />}
+            style={"calendarControlArrow"}
+            func={minusYear}
+          />
+          <Button
+            content={<FontAwesomeIcon icon={faAngleLeft} />}
+            style={"calendarControlArrow"}
+            func={minusMonth}
+          />
+          {months[todayDate.getMonth()]} {todayDate.getFullYear()}
+          <Button
+            content={<FontAwesomeIcon icon={faAngleRight} />}
+            style={"calendarControlArrow"}
+            func={plusMonth}
+          />
+          <Button
+            content={<FontAwesomeIcon icon={faAnglesRight} />}
+            style={"calendarControlArrow"}
+            func={plusYear}
+          />
+        </div>
       </div>
       <div className={styles.calendarGrid}>
         {weekDays.map((day) => (

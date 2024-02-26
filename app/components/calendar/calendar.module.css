@@ -3,13 +3,23 @@
   color: black;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #cfffff;
+}
+
+.calendarHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .calendarControls {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
+  width: 100%;
 }
 
 .calendarGrid {
